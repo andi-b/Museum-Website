@@ -25,6 +25,9 @@
       <div class="museum-highlight__description">
         <p>{{ highlight.description }}</p>
       </div>
+      <div v-if="$slots.extra" class="museum-highlight__extra">
+        <slot name="extra"></slot>
+      </div>
       <div v-if="highlight.news" class="museum-highlight__news">
         <div class="museum-highlight__news__header">
           <div>News</div>
@@ -35,9 +38,6 @@
         <div class="museum-highlight__news__title">
           <p>{{ highlight.news.title }}</p>
         </div>
-      </div>
-      <div v-if="$slots.extra" class="museum-highlight__extra">
-        <slot name="extra"></slot>
       </div>
     </div>
 
