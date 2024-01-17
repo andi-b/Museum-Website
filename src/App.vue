@@ -8,5 +8,5 @@
 </template>
 
 <script setup lang="js">
-import SpacePage from '@/pages/SpacePage.vue'
+import SpacePage from '@/pages/SpacePage.vue';
 </script>

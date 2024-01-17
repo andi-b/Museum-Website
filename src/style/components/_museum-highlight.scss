@@ -68,13 +68,18 @@
     }
 
     i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       transform: rotate(0);
       transition: transform 0.3s ease-in-out;
       will-change: transform;
       background-color: hsla(0, 0%, 0%, 0.8);
       border: 2px solid #fff;
-      padding: 0.5em;
       border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      box-sizing: border-box;
     }
 
     &:hover i {
@@ -112,6 +117,7 @@
     align-items: center;
     justify-content: center;
     border: 2px solid hsla(0, 0%, 100%, 0.5);
+    box-shadow: 0 0 3px #000;
 
     img {
       width: 100%;
