@@ -1,0 +1,24 @@
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"css.format.braceStyle": "expand",
+	"scss.format.braceStyle": "expand",
+	"less.format.braceStyle": "expand",
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"prettier.semi": true,
+	"prettier.bracketSameLine": true,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.indentSize": "tabSize",
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit"
+	},
+	"workbench.colorCustomizations": {
+		"tab.activeBorder": "#0127ff",
+		"tab.activeForeground": "#FFFFFF",
+		"tab.activeBackground": "#0127ff3a"
+	},
+	"vscode-better-color-picker.languages": ["json", "javascript", "typescript"]
+}
