@@ -78,7 +78,7 @@ export default {
       try {
         this.loading = true;
         const searchQuery = this.highlight.name.replace(/\s/g, '%20');
-        const url = `https://source.unsplash.com/featured/320x180/?${this.theme}%20${searchQuery}`;
+        const url = `https://source.unsplash.com/featured/640x360/?${this.theme}%20${searchQuery}`;
 
         const response = await fetch(url);
         this.image = response.url;
