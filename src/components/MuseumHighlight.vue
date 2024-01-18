@@ -77,14 +77,16 @@ export default {
     async fetchImage() {
       try {
         this.loading = true;
-        const searchQuery = this.highlight.name.replace(/\s/g, '%20');
+        const searchQuery = encodeURIComponent(this.highlight.name);
         const url = `https://source.unsplash.com/featured/640x360/?${this.theme}%20${searchQuery}`;
 
         const response = await fetch(url);
+        if (!response.ok) throw new Error('Network response was not ok.');
+
         this.image = response.url;
-        this.loading = false;
       } catch (error) {
         console.error(error);
+      } finally {
         this.loading = false;
       }
     },
